@@ -1,0 +1,4 @@
+01:03:45 **** Incremental Build of configuration gcc-debug for project WirelessMeshNetwork ****
+make MODE=debug CONFIGNAME=gcc-debug all 
+network.cc
+Creating executable: out/gcc-debug//WirelessMeshNetwork

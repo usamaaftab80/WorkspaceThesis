@@ -1,0 +1,29 @@
+/*
+ * network.cc
+ *
+ *  Created on: Jun 28, 2015
+ *      Author: usamaaftab
+ */
+
+#include <string.h>
+#include <omnetpp.h>
+
+class node : public cSimpleModule{
+
+protected:
+    virtual void initialize();
+    virtual void handleMessage(cMessage *msg);
+
+};
+
+void node::initialize(){
+    if(strcmp("node", getName()) == 0){
+          cMessage *msg = new cMessage("nodeMessage");
+          send(msg, "out");
+    }
+}
+
+void node::handleMessage(cMessage *msg){
+
+
+}

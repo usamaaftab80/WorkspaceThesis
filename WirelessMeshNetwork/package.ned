@@ -1,0 +1,3 @@
+package wirelessmeshnetwork;
+
+@license(LGPL);
