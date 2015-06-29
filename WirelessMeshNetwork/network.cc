@@ -27,5 +27,4 @@ void node::initialize(){
 
 void node::handleMessage(cMessage *msg){
     send(msg, "out");
-
 }

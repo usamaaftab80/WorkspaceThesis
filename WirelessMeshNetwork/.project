@@ -3,6 +3,7 @@
 	<name>WirelessMeshNetwork</name>
 	<comment></comment>
 	<projects>
+		<project>mixim-2.3</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
