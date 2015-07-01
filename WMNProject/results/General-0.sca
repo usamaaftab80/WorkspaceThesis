@@ -1,0 +1,147 @@
+version 2
+run General-0-20150630-17:08:00-50412
+attr configname General
+attr datetime 20150630-17:08:00
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network WMNProject
+attr processid 50412
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar WMNProject.node[0].nic.phy 	nbFramesWithInterference 	1
+scalar WMNProject.node[0].nic.phy 	nbFramesWithoutInterference 	36
+scalar WMNProject.node[0].nic.phy 	nbFramesWithInterferencePartial 	0
+scalar WMNProject.node[0].nic.phy 	nbFramesWithoutInterferencePartial 	0
+scalar WMNProject.node[0].nic.phy 	nbFramesWithInterferenceDropped 	2
+scalar WMNProject.node[0].nic.phy 	nbFramesWithoutInterferenceDropped 	0
+scalar WMNProject.node[0].netwl 	nbDataPacketsReceived 	12
+scalar WMNProject.node[0].netwl 	nbDataPacketsSent 	3
+scalar WMNProject.node[0].netwl 	nbDataPacketsForwarded 	12
+scalar WMNProject.node[0].netwl 	meanNbHops 	2
+scalar WMNProject.node[0].appl 	"activity duration" 	2.721406974718
+attr unit  s
+scalar WMNProject.node[0].appl 	firstPacketGeneration 	10.07103605871
+attr unit  s
+scalar WMNProject.node[0].appl 	lastPacketReception 	12.792443033428
+attr unit  s
+scalar WMNProject.node[0].appl 	nbPacketsSent 	3
+scalar WMNProject.node[0].appl 	nbPacketsReceived 	12
+statistic WMNProject.node[0].appl 	latency
+field count 12
+field mean 0.000513
+field stddev 0.0001720729232305
+field sum 0.006156
+field sqrsum 3.483728e-06
+field min 0.000398
+field max 0.000818
+scalar WMNProject.node[1].nic.phy 	nbFramesWithInterference 	1
+scalar WMNProject.node[1].nic.phy 	nbFramesWithoutInterference 	37
+scalar WMNProject.node[1].nic.phy 	nbFramesWithInterferencePartial 	0
+scalar WMNProject.node[1].nic.phy 	nbFramesWithoutInterferencePartial 	0
+scalar WMNProject.node[1].nic.phy 	nbFramesWithInterferenceDropped 	1
+scalar WMNProject.node[1].nic.phy 	nbFramesWithoutInterferenceDropped 	0
+scalar WMNProject.node[1].netwl 	nbDataPacketsReceived 	12
+scalar WMNProject.node[1].netwl 	nbDataPacketsSent 	3
+scalar WMNProject.node[1].netwl 	nbDataPacketsForwarded 	12
+scalar WMNProject.node[1].netwl 	meanNbHops 	2
+scalar WMNProject.node[1].appl 	"activity duration" 	2.707818698179
+attr unit  s
+scalar WMNProject.node[1].appl 	firstPacketGeneration 	10.07103605871
+attr unit  s
+scalar WMNProject.node[1].appl 	lastPacketReception 	12.778854756889
+attr unit  s
+scalar WMNProject.node[1].appl 	nbPacketsSent 	3
+scalar WMNProject.node[1].appl 	nbPacketsReceived 	12
+statistic WMNProject.node[1].appl 	latency
+field count 12
+field mean 0.00049466666666667
+field stddev 0.00015950681566135
+field sum 0.005936
+field sqrsum 3.216208e-06
+field min 0.000398
+field max 0.000818
+scalar WMNProject.node[2].nic.phy 	nbFramesWithInterference 	4
+scalar WMNProject.node[2].nic.phy 	nbFramesWithoutInterference 	34
+scalar WMNProject.node[2].nic.phy 	nbFramesWithInterferencePartial 	0
+scalar WMNProject.node[2].nic.phy 	nbFramesWithoutInterferencePartial 	0
+scalar WMNProject.node[2].nic.phy 	nbFramesWithInterferenceDropped 	1
+scalar WMNProject.node[2].nic.phy 	nbFramesWithoutInterferenceDropped 	0
+scalar WMNProject.node[2].netwl 	nbDataPacketsReceived 	12
+scalar WMNProject.node[2].netwl 	nbDataPacketsSent 	3
+scalar WMNProject.node[2].netwl 	nbDataPacketsForwarded 	12
+scalar WMNProject.node[2].netwl 	meanNbHops 	2
+scalar WMNProject.node[2].appl 	"activity duration" 	2.354855823451
+attr unit  s
+scalar WMNProject.node[2].appl 	firstPacketGeneration 	10.437587209977
+attr unit  s
+scalar WMNProject.node[2].appl 	lastPacketReception 	12.792443033428
+attr unit  s
+scalar WMNProject.node[2].appl 	nbPacketsSent 	3
+scalar WMNProject.node[2].appl 	nbPacketsReceived 	12
+statistic WMNProject.node[2].appl 	latency
+field count 12
+field mean 0.00052133333333333
+field stddev 0.00016837908169222
+field sum 0.006256
+field sqrsum 3.573328e-06
+field min 0.000398
+field max 0.000818
+scalar WMNProject.node[3].nic.phy 	nbFramesWithInterference 	2
+scalar WMNProject.node[3].nic.phy 	nbFramesWithoutInterference 	36
+scalar WMNProject.node[3].nic.phy 	nbFramesWithInterferencePartial 	0
+scalar WMNProject.node[3].nic.phy 	nbFramesWithoutInterferencePartial 	0
+scalar WMNProject.node[3].nic.phy 	nbFramesWithInterferenceDropped 	1
+scalar WMNProject.node[3].nic.phy 	nbFramesWithoutInterferenceDropped 	0
+scalar WMNProject.node[3].netwl 	nbDataPacketsReceived 	12
+scalar WMNProject.node[3].netwl 	nbDataPacketsSent 	3
+scalar WMNProject.node[3].netwl 	nbDataPacketsForwarded 	12
+scalar WMNProject.node[3].netwl 	meanNbHops 	2
+scalar WMNProject.node[3].appl 	"activity duration" 	2.721406974718
+attr unit  s
+scalar WMNProject.node[3].appl 	firstPacketGeneration 	10.07103605871
+attr unit  s
+scalar WMNProject.node[3].appl 	lastPacketReception 	12.792443033428
+attr unit  s
+scalar WMNProject.node[3].appl 	nbPacketsSent 	3
+scalar WMNProject.node[3].appl 	nbPacketsReceived 	12
+statistic WMNProject.node[3].appl 	latency
+field count 12
+field mean 0.00049633333333333
+field stddev 0.00016191093698435
+field sum 0.005956
+field sqrsum 3.244528e-06
+field min 0.000398
+field max 0.000818
+scalar WMNProject.node[4].nic.phy 	nbFramesWithInterference 	1
+scalar WMNProject.node[4].nic.phy 	nbFramesWithoutInterference 	37
+scalar WMNProject.node[4].nic.phy 	nbFramesWithInterferencePartial 	0
+scalar WMNProject.node[4].nic.phy 	nbFramesWithoutInterferencePartial 	0
+scalar WMNProject.node[4].nic.phy 	nbFramesWithInterferenceDropped 	1
+scalar WMNProject.node[4].nic.phy 	nbFramesWithoutInterferenceDropped 	0
+scalar WMNProject.node[4].netwl 	nbDataPacketsReceived 	12
+scalar WMNProject.node[4].netwl 	nbDataPacketsSent 	3
+scalar WMNProject.node[4].netwl 	nbDataPacketsForwarded 	12
+scalar WMNProject.node[4].netwl 	meanNbHops 	2
+scalar WMNProject.node[4].appl 	"activity duration" 	2.721406974718
+attr unit  s
+scalar WMNProject.node[4].appl 	firstPacketGeneration 	10.07103605871
+attr unit  s
+scalar WMNProject.node[4].appl 	lastPacketReception 	12.792443033428
+attr unit  s
+scalar WMNProject.node[4].appl 	nbPacketsSent 	3
+scalar WMNProject.node[4].appl 	nbPacketsReceived 	12
+statistic WMNProject.node[4].appl 	latency
+field count 12
+field mean 0.000458
+field stddev 0.00012030264865217
+field sum 0.005496
+field sqrsum 2.676368e-06
+field min 0.000398
+field max 0.000718

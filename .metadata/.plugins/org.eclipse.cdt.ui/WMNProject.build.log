@@ -1,0 +1,6 @@
+16:57:27 **** Build of configuration gcc-debug for project WMNProject ****
+make MODE=debug CONFIGNAME=gcc-debug all 
+Creating executable: out/gcc-debug//WMNProject
+
+16:57:27 Build Finished (took 252ms)
+
