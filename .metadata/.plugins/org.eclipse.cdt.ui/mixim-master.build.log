@@ -1,0 +1,159 @@
+16:10:45 **** Incremental Build of configuration gcc-debug for project mixim-master ****
+make MODE=debug CONFIGNAME=gcc-debug all 
+cd src && /Library/Developer/CommandLineTools/usr/bin/make
+base/connectionManager/BaseConnectionManager.cc
+In file included from base/connectionManager/BaseConnectionManager.cc:1:
+In file included from base/connectionManager/BaseConnectionManager.h:9:
+base/connectionManager/NicEntry.h:69:5: error: unknown type name 'Coord'; did you mean 'inet::Coord'?
+    Coord pos;
+    ^~~~~
+    inet::Coord
+../../inet/src/inet/common/geometry/common/Coord.h:36:16: note: 'inet::Coord' declared here
+class INET_API Coord : public cObject
+               ^
+In file included from base/connectionManager/BaseConnectionManager.cc:1:
+base/connectionManager/BaseConnectionManager.h:80:19: error: unknown type name 'Coord'; did you mean 'inet::Coord'?
+                GridCoord(const Coord& c, const Coord& gridCellSize = Coord(1.0,1.0,1.0))
+                                ^~~~~
+                                inet::Coord
+../../inet/src/inet/common/geometry/common/Coord.h:36:16: note: 'inet::Coord' declared here
+class INET_API Coord : public cObject
+               ^
+In file included from base/connectionManager/BaseConnectionManager.cc:1:
+base/connectionManager/BaseConnectionManager.h:80:35: error: unknown type name 'Coord'; did you mean 'inet::Coord'?
+                GridCoord(const Coord& c, const Coord& gridCellSize = Coord(1.0,1.0,1.0))
+                                                ^~~~~
+                                                inet::Coord
+../../inet/src/inet/common/geometry/common/Coord.h:36:16: note: 'inet::Coord' declared here
+class INET_API Coord : public cObject
+               ^
+In file included from base/connectionManager/BaseConnectionManager.cc:1:
+base/connectionManager/BaseConnectionManager.h:212:8: error: unknown type name 'Coord'; did you mean 'inet::Coord'?
+        const Coord* playgroundSize;
+              ^~~~~
+              inet::Coord
+../../inet/src/inet/common/geometry/common/Coord.h:36:16: note: 'inet::Coord' declared here
+class INET_API Coord : public cObject
+               ^
+In file included from base/connectionManager/BaseConnectionManager.cc:1:
+base/connectionManager/BaseConnectionManager.h:251:5: error: unknown type name 'Coord'; did you mean 'inet::Coord'?
+    Coord findDistance;
+    ^~~~~
+    inet::Coord
+../../inet/src/inet/common/geometry/common/Coord.h:36:16: note: 'inet::Coord' declared here
+class INET_API Coord : public cObject
+               ^
+In file included from base/connectionManager/BaseConnectionManager.cc:1:
+base/connectionManager/BaseConnectionManager.h:270:42: error: unknown type name 'Coord'; did you mean 'inet::Coord'?
+    GridCoord getCellForCoordinate(const Coord& c) const;
+                                         ^~~~~
+                                         inet::Coord
+../../inet/src/inet/common/geometry/common/Coord.h:36:16: note: 'inet::Coord' declared here
+class INET_API Coord : public cObject
+               ^
+In file included from base/connectionManager/BaseConnectionManager.cc:1:
+base/connectionManager/BaseConnectionManager.h:343:69: error: unknown type name 'Coord'; did you mean 'inet::Coord'?
+        virtual void updateConnections(NicEntry::t_nicid_cref nicID, const Coord* oldPos, const Coord* newPos);
+                                                                           ^~~~~
+                                                                           inet::Coord
+../../inet/src/inet/common/geometry/common/Coord.h:36:16: note: 'inet::Coord' declared here
+class INET_API Coord : public cObject
+               ^
+In file included from base/connectionManager/BaseConnectionManager.cc:1:
+base/connectionManager/BaseConnectionManager.h:343:90: error: unknown type name 'Coord'; did you mean 'inet::Coord'?
+        virtual void updateConnections(NicEntry::t_nicid_cref nicID, const Coord* oldPos, const Coord* newPos);
+                                                                                                ^~~~~
+                                                                                                inet::Coord
+../../inet/src/inet/common/geometry/common/Coord.h:36:16: note: 'inet::Coord' declared here
+class INET_API Coord : public cObject
+               ^
+In file included from base/connectionManager/BaseConnectionManager.cc:1:
+base/connectionManager/BaseConnectionManager.h:385:81: error: unknown type name 'Coord'; did you mean 'inet::Coord'?
+        bool registerNic(cModule* nic, ConnectionManagerAccess* chAccess, const Coord* nicPos);
+                                                                                ^~~~~
+                                                                                inet::Coord
+../../inet/src/inet/common/geometry/common/Coord.h:36:16: note: 'inet::Coord' declared here
+class INET_API Coord : public cObject
+               ^
+In file included from base/connectionManager/BaseConnectionManager.cc:1:
+base/connectionManager/BaseConnectionManager.h:402:56: error: unknown type name 'Coord'; did you mean 'inet::Coord'?
+        void updateNicPos(NicEntry::t_nicid_cref nicID, const Coord* newPos);
+                                                              ^~~~~
+                                                              inet::Coord
+../../inet/src/inet/common/geometry/common/Coord.h:36:16: note: 'inet::Coord' declared here
+class INET_API Coord : public cObject
+               ^
+In file included from base/connectionManager/BaseConnectionManager.cc:1:
+base/connectionManager/BaseConnectionManager.h:80:57: error: use of undeclared identifier 'Coord'
+                GridCoord(const Coord& c, const Coord& gridCellSize = Coord(1.0,1.0,1.0))
+                                                                      ^
+In file included from base/connectionManager/BaseConnectionManager.cc:7:
+base/modules/BaseWorldUtility.h:42:5: error: unknown type name 'Coord'; did you mean 'inet::Coord'?
+    Coord playgroundSize;
+    ^~~~~
+    inet::Coord
+../../inet/src/inet/common/geometry/common/Coord.h:36:16: note: 'inet::Coord' declared here
+class INET_API Coord : public cObject
+               ^
+In file included from base/connectionManager/BaseConnectionManager.cc:7:
+base/modules/BaseWorldUtility.h:81:11: error: unknown type name 'Coord'; did you mean 'inet::Coord'?
+    const Coord* getPgs(){
+          ^~~~~
+          inet::Coord
+../../inet/src/inet/common/geometry/common/Coord.h:36:16: note: 'inet::Coord' declared here
+class INET_API Coord : public cObject
+               ^
+In file included from base/connectionManager/BaseConnectionManager.cc:7:
+base/modules/BaseWorldUtility.h:93:13: error: unknown type name 'Coord'; did you mean 'inet::Coord'?
+    virtual Coord getRandomPosition();
+            ^~~~~
+            inet::Coord
+../../inet/src/inet/common/geometry/common/Coord.h:36:16: note: 'inet::Coord' declared here
+class INET_API Coord : public cObject
+               ^
+In file included from base/connectionManager/BaseConnectionManager.cc:8:
+../../inet/src/inet/common/FindModule.h:59:16: error: use of undeclared identifier 'findContainingNode'
+        return findContainingNode(m);
+               ^
+../../inet/src/inet/common/FindModule.h:72:38: error: use of undeclared identifier 'findContainingNode'
+        return const_cast<cModule *>(findContainingNode(const_cast<cModule *>(m)));
+                                     ^
+base/connectionManager/BaseConnectionManager.cc:48:29: error: no template named 'FindModule'; did you mean 'inet::FindModule'?
+                BaseWorldUtility* world = FindModule<BaseWorldUtility*>
+                                          ^~~~~~~~~~
+                                          inet::FindModule
+../../inet/src/inet/common/FindModule.h:15:7: note: 'inet::FindModule' declared here
+class FindModule
+      ^
+base/connectionManager/BaseConnectionManager.cc:68:3: error: unknown type name 'Coord'; did you mean 'inet::Coord'?
+                Coord dim((*playgroundSize) / maxInterferenceDistance);
+                ^~~~~
+                inet::Coord
+../../inet/src/inet/common/geometry/common/Coord.h:36:16: note: 'inet::Coord' declared here
+class INET_API Coord : public cObject
+               ^
+base/connectionManager/BaseConnectionManager.cc:69:13: error: no matching conversion for functional-style cast from 'inet::Coord' to 'BaseConnectionManager::GridCoord'
+                gridDim = GridCoord(dim);
+                          ^~~~~~~~~~~~~
+base/connectionManager/BaseConnectionManager.h:72:3: note: candidate constructor not viable: no known conversion from 'inet::Coord' to 'const BaseConnectionManager::GridCoord' for 1st argument
+                GridCoord(const GridCoord& o)
+                ^
+base/connectionManager/BaseConnectionManager.h:54:3: note: candidate constructor not viable: requires 0 arguments, but 1 was provided
+                GridCoord()
+                ^
+base/connectionManager/BaseConnectionManager.h:60:3: note: candidate constructor not viable: requires 2 arguments, but 1 was provided
+                GridCoord(int x, int y)
+                ^
+base/connectionManager/BaseConnectionManager.h:66:3: note: candidate constructor not viable: requires 3 arguments, but 1 was provided
+                GridCoord(int x, int y, int z)
+                ^
+base/connectionManager/BaseConnectionManager.h:80:3: note: candidate constructor not viable: requires 2 arguments, but 1 was provided
+                GridCoord(const Coord& c, const Coord& gridCellSize = Coord(1.0,1.0,1.0))
+                ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make[1]: *** [../out/gcc-debug/src/base/connectionManager/BaseConnectionManager.o] Error 1
+make: *** [all] Error 2
+
+16:10:47 Build Finished (took 1s.592ms)
+

@@ -2,7 +2,7 @@
 # OMNeT++/OMNEST Makefile for WMNProject
 #
 # This file was generated with the command:
-#  opp_makemake -f --deep -O out -L../mixim-2.3/out/$$\(CONFIGNAME\)/src -lmixim -KMIXIM_2_3_PROJ=../mixim-2.3
+#  opp_makemake -f --deep -O out -L../mixim-master/out/$$\(CONFIGNAME\)/src -lmixim -KMIXIM_MASTER_PROJ=../mixim-master
 #
 
 # Name of target to be created (-o option)
@@ -14,14 +14,14 @@ USERIF_LIBS = $(ALL_ENV_LIBS) # that is, $(TKENV_LIBS) $(CMDENV_LIBS)
 #USERIF_LIBS = $(TKENV_LIBS)
 
 # C++ include paths (with -I)
-INCLUDE_PATH = -I.
+INCLUDE_PATH = -I. -Iresults
 
 # Additional object and library files to link with
 EXTRA_OBJS =
 
 # Additional libraries (-L, -l options)
-LIBS = -L../mixim-2.3/out/$(CONFIGNAME)/src  -lmixim
-LIBS += -Wl,-rpath,`abspath ../mixim-2.3/out/$(CONFIGNAME)/src`
+LIBS = -L../mixim-master/out/$(CONFIGNAME)/src  -lmixim
+LIBS += -Wl,-rpath,`abspath ../mixim-master/out/$(CONFIGNAME)/src`
 
 # Output directory
 PROJECT_OUTPUT_DIR = out
@@ -35,7 +35,7 @@ OBJS =
 MSGFILES =
 
 # Other makefile variables (-K)
-MIXIM_2_3_PROJ=../mixim-2.3
+MIXIM_MASTER_PROJ=../mixim-master
 
 #------------------------------------------------------------------------------
 
@@ -109,13 +109,14 @@ clean:
 	$(Q)-rm -rf $O
 	$(Q)-rm -f WMNProject WMNProject.exe libWMNProject.so libWMNProject.a libWMNProject.dll libWMNProject.dylib
 	$(Q)-rm -f ./*_m.cc ./*_m.h
+	$(Q)-rm -f results/*_m.cc results/*_m.h
 
 cleanall: clean
 	$(Q)-rm -rf $(PROJECT_OUTPUT_DIR)
 
 depend:
 	$(qecho) Creating dependencies...
-	$(Q)$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc
+	$(Q)$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc results/*.cc
 
 # DO NOT DELETE THIS LINE -- make depend depends on it.
 

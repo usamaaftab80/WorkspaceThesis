@@ -3,7 +3,7 @@
 	<name>WMNProject</name>
 	<comment></comment>
 	<projects>
-		<project>mixim-2.3</project>
+		<project>mixim-master</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

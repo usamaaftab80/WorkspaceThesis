@@ -1,59 +1,15 @@
-16:57:06 **** Incremental Build of configuration gcc-debug for project mixim-2.3 ****
+16:43:01 **** Build of configuration gcc-debug for project mixim-2.3 ****
 make MODE=debug CONFIGNAME=gcc-debug all 
 cd src && /Library/Developer/CommandLineTools/usr/bin/make
-cd examples && /Library/Developer/CommandLineTools/usr/bin/make
-CSMAMac/SimpleNetwLayer.cc
-In file included from CSMAMac/SimpleNetwLayer.cc:8:
-In file included from CSMAMac/SimpleNetwLayer.h:20:
-In file included from ../src/base/modules/BaseMacLayer.h:27:
-../src/base/modules/BaseLayer.h:108:18: warning: 'BaseLayer::finish' hides overloaded virtual function [-Woverloaded-virtual]
-    virtual void finish();
-                 ^
-/Users/usamaaftab/omnetpp-4.6/include/clistener.h:118:18: note: hidden overloaded virtual function 'cIListener::finish' declared here: different number of parameters (2 vs 0)
-    virtual void finish(cComponent *component, simsignal_t signalID) {}
-                 ^
-1 warning generated.
-analogueModels/RandomFreqTimeModel.cc
-analogueModels/RandomFrequencyOnlyModel.cc
-analogueModels/SamplePhyLayer.cc
-In file included from analogueModels/SamplePhyLayer.cc:1:
-In file included from analogueModels/SamplePhyLayer.h:4:
-In file included from ../src/modules/phy/PhyLayer.h:12:
-../src/base/phyLayer/BasePhyLayer.h:442:15: warning: 'BasePhyLayer::finish' hides overloaded virtual function [-Woverloaded-virtual]
-        virtual void finish();
-                     ^
-/Users/usamaaftab/omnetpp-4.6/include/clistener.h:118:18: note: hidden overloaded virtual function 'cIListener::finish' declared here: different number of parameters (2 vs 0)
-    virtual void finish(cComponent *component, simsignal_t signalID) {}
-                 ^
-1 warning generated.
-analogueModels/SimpleMacLayer.cc
-ieee802154Narrow/NetworkStackTrafficGen.cc
-In file included from ieee802154Narrow/NetworkStackTrafficGen.cc:16:
-In file included from ieee802154Narrow/NetworkStackTrafficGen.h:23:
-../src/base/modules/BaseLayer.h:108:18: warning: 'BaseLayer::finish' hides overloaded virtual function [-Woverloaded-virtual]
-    virtual void finish();
-                 ^
-/Users/usamaaftab/omnetpp-4.6/include/clistener.h:118:18: note: hidden overloaded virtual function 'cIListener::finish' declared here: different number of parameters (2 vs 0)
-    virtual void finish(cComponent *component, simsignal_t signalID) {}
-                 ^
-1 warning generated.
-ieee802154Narrow/WorldUtilityStats.cc
-In file included from ieee802154Narrow/WorldUtilityStats.cc:16:
-ieee802154Narrow/WorldUtilityStats.h:59:15: warning: 'WorldUtilityStats::finish' hides overloaded virtual function [-Woverloaded-virtual]
-        virtual void finish();
-                     ^
-/Users/usamaaftab/omnetpp-4.6/include/clistener.h:118:18: note: hidden overloaded virtual function 'cIListener::finish' declared here: different number of parameters (2 vs 0)
-    virtual void finish(cComponent *component, simsignal_t signalID) {}
-                 ^
-In file included from ieee802154Narrow/WorldUtilityStats.cc:18:
-../src/base/modules/BaseLayer.h:108:18: warning: 'BaseLayer::finish' hides overloaded virtual function [-Woverloaded-virtual]
-    virtual void finish();
-                 ^
-/Users/usamaaftab/omnetpp-4.6/include/clistener.h:118:18: note: hidden overloaded virtual function 'cIListener::finish' declared here: different number of parameters (2 vs 0)
-    virtual void finish(cComponent *component, simsignal_t signalID) {}
-                 ^
-2 warnings generated.
-Creating executable: ../out/gcc-debug/examples/miximexamples
+base/connectionManager/BaseConnectionManager.cc
+In file included from base/connectionManager/BaseConnectionManager.cc:1:
+In file included from base/connectionManager/BaseConnectionManager.h:9:
+base/connectionManager/NicEntry.h:29:10: fatal error: 'Coord.h' file not found
+#include "Coord.h"
+         ^
+1 error generated.
+make[1]: *** [../out/gcc-debug/src/base/connectionManager/BaseConnectionManager.o] Error 1
+make: *** [all] Error 2
 
-16:57:17 Build Finished (took 10s.379ms)
+16:43:03 Build Finished (took 1s.122ms)
 

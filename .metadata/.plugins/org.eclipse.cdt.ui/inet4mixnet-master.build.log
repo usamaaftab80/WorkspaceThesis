@@ -1,0 +1,219 @@
+16:40:58 **** Build of configuration gcc-debug for project inet4mixnet-master ****
+make MODE=debug CONFIGNAME=gcc-debug all 
+cd src && /Library/Developer/CommandLineTools/usr/bin/make
+MSGC: applications/ethernet/EtherApp.msg
+MSGC: linklayer/contract/Ieee802Ctrl.msg
+applications/ethernet/EtherAppCli.cc
+applications/ethernet/EtherAppSrv.cc
+MSGC: networklayer/contract/IPControlInfo.msg
+MSGC: networklayer/contract/IPProtocolId.msg
+MSGC: networklayer/contract/IPv6ControlInfo.msg
+applications/generic/IPTrafGen.cc
+In file included from applications/generic/IPTrafGen.cc:21:
+applications/generic/IPTrafGen.h:68:18: warning: 'IPTrafGen::initialize' hides overloaded virtual function [-Woverloaded-virtual]
+    virtual void initialize(int stage);
+                 ^
+applications/generic/IPTrafGen.h:41:18: note: hidden overloaded virtual function 'IPTrafSink::initialize' declared here: different number of parameters (0 vs 1)
+    virtual void initialize();
+                 ^
+1 warning generated.
+MSGC: applications/pingapp/PingPayload.msg
+applications/pingapp/PingApp.cc
+MSGC: transport/rtp/RTPSenderControlMessage.msg
+MSGC: transport/rtp/RTPSenderStatusMessage.msg
+applications/rtpapp/RTPApplication.cc
+In file included from applications/rtpapp/RTPApplication.cc:20:
+transport/rtp/RTPInterfacePacket.h:91:29: warning: 'RTPInterfacePacket::info' hides overloaded virtual function [-Woverloaded-virtual]
+        virtual std::string info();
+                            ^
+/Users/usamaaftab/omnetpp-4.6/include/cmessage.h:798:25: note: hidden overloaded virtual function 'cPacket::info' declared here: different qualifiers (const vs none)
+    virtual std::string info() const;
+                        ^
+1 warning generated.
+MSGC: networklayer/rsvp_te/IntServ.msg
+MSGC: transport/contract/SCTPCommand.msg
+MSGC: transport/contract/UDPControlInfo.msg
+MSGC: transport/sctp/SCTPMessage.msg
+applications/sctpapp/SCTPClient.cc
+In file included from applications/sctpapp/SCTPClient.cc:22:
+applications/sctpapp/SCTPClient.h:129:14: warning: 'SCTPClient::addressAddedArrived' hides overloaded virtual function [-Woverloaded-virtual]
+        void addressAddedArrived(int32 assocId, IPvXAddress remoteAddr);
+             ^
+transport/contract/SCTPSocket.h:61:18: note: hidden overloaded virtual function 'SCTPSocket::CallbackInterface::addressAddedArrived' declared here: different number of parameters (3 vs 2)
+    virtual void addressAddedArrived(int assocId, IPvXAddress localAddr, IPvXAddress remoteAddr) {}
+                 ^
+1 warning generated.
+applications/sctpapp/SCTPPeer.cc
+In file included from applications/sctpapp/SCTPPeer.cc:19:
+applications/sctpapp/SCTPPeer.h:84:14: warning: 'SCTPPeer::socketEstablished' hides overloaded virtual function [-Woverloaded-virtual]
+        void socketEstablished(int32 connId, void *yourPtr);
+             ^
+transport/contract/SCTPSocket.h:52:22: note: hidden overloaded virtual function 'SCTPSocket::CallbackInterface::socketEstablished' declared here: different number of parameters (3 vs 2)
+        virtual void socketEstablished(int assocId, void *yourPtr, uint64 buffer) {}
+                     ^
+In file included from applications/sctpapp/SCTPPeer.cc:19:
+applications/sctpapp/SCTPPeer.h:112:14: warning: 'SCTPPeer::addressAddedArrived' hides overloaded virtual function [-Woverloaded-virtual]
+        void addressAddedArrived(int32 assocId, IPvXAddress remoteAddr);
+             ^
+transport/contract/SCTPSocket.h:61:18: note: hidden overloaded virtual function 'SCTPSocket::CallbackInterface::addressAddedArrived' declared here: different number of parameters (3 vs 2)
+    virtual void addressAddedArrived(int assocId, IPvXAddress localAddr, IPvXAddress remoteAddr) {}
+                 ^
+2 warnings generated.
+applications/sctpapp/SCTPServer.cc
+applications/sctpapp/SCTPServer.cc:287:43: warning: variable 'id' is uninitialized when used here [-Wuninitialized]
+                        qinfo->setAssocId(id);
+                                          ^~
+applications/sctpapp/SCTPServer.cc:184:13: note: initialize the variable 'id' to silence this warning
+    int32 id;
+            ^
+             = 0
+applications/sctpapp/SCTPServer.cc:468:38: warning: unused variable 'i' [-Wunused-variable]
+        ServerAssocStatMap::iterator i=serverAssocStatMap.find(assocId);
+                                     ^
+2 warnings generated.
+MSGC: transport/contract/TCPCommand.msg
+applications/tcpapp/TCPBasicClientApp.cc
+applications/tcpapp/TCPEchoApp.cc
+MSGC: applications/tcpapp/GenericAppMsg.msg
+applications/tcpapp/TCPGenericCliAppBase.cc
+applications/tcpapp/TCPGenericSrvApp.cc
+applications/tcpapp/TCPGenericSrvThread.cc
+applications/tcpapp/TCPSessionApp.cc
+applications/tcpapp/TCPSinkApp.cc
+MSGC: transport/tcp/TCPSegment.msg
+applications/tcpapp/TCPSpoof.cc
+applications/tcpapp/TCPSrvHostApp.cc
+applications/tcpapp/TelnetApp.cc
+applications/udpapp/UDPAppBase.cc
+applications/udpapp/UDPBasicApp.cc
+MSGC: applications/udpapp/UDPEchoAppMsg.msg
+applications/udpapp/UDPEchoApp.cc
+applications/udpapp/UDPSink.cc
+applications/udpapp/UDPVideoStreamCli.cc
+applications/udpapp/UDPVideoStreamSvr.cc
+base/AbstractQueue.cc
+base/BasicModule.cc
+MSGC: base/ByteArrayMessage.msg
+base/ByteArrayMessage.cc
+base/Join.cc
+base/ModuleAccess.cc
+base/NotificationBoard.cc
+base/NotifierConsts.cc
+base/PassiveQueueBase.cc
+base/ProtocolMap.cc
+base/QueueBase.cc
+base/QueueWithQoS.cc
+base/ReassemblyBuffer.cc
+base/Sink.cc
+linklayer/contract/MACAddress.cc
+MSGC: linklayer/ethernet/EtherFrame.msg
+linklayer/ethernet/EtherBus.cc
+linklayer/ethernet/EtherEncap.cc
+linklayer/ethernet/EtherHub.cc
+linklayer/ethernet/EtherLLC.cc
+linklayer/ethernet/EtherMAC.cc
+linklayer/ethernet/EtherMAC2.cc
+linklayer/ethernet/EtherMACBase.cc
+linklayer/etherswitch/MACRelayUnitBase.cc
+linklayer/etherswitch/MACRelayUnitNP.cc
+linklayer/etherswitch/MACRelayUnitPP.cc
+MSGC: linklayer/ext/ExtFrame.msg
+linklayer/ext/cSocketRTScheduler.cc
+MSGC: networklayer/ipv4/IPDatagram.msg
+linklayer/ext/ExtInterface.cc
+In file included from linklayer/ext/ExtInterface.cc:29:
+linklayer/ext/ExtInterface.h:62:17: warning: private field 'tag_color' is not used [-Wunused-private-field]
+    const char *tag_color;
+                ^
+linklayer/ext/ExtInterface.h:63:17: warning: private field 'tag_width' is not used [-Wunused-private-field]
+    const char *tag_width;
+                ^
+2 warnings generated.
+linklayer/ppp/DropsGenerator.cc
+linklayer/ppp/DuplicatesGenerator.cc
+MSGC: linklayer/ppp/PPPFrame.msg
+linklayer/ppp/PPP.cc
+linklayer/ppp/ThruputMeter.cc
+MSGC: networklayer/arp/ARPPacket.msg
+networklayer/arp/ARP.cc
+networklayer/autorouting/FlatNetworkConfigurator.cc
+networklayer/autorouting/FlatNetworkConfigurator6.cc
+In file included from networklayer/autorouting/FlatNetworkConfigurator6.cc:25:
+networklayer/ipv6/RoutingTable6.h:75:42: warning: assigning field to itself [-Wself-assign-field]
+    void setMetric(int metric)  {_metric = _metric;}
+                                         ^
+1 warning generated.
+networklayer/autorouting/NetworkConfigurator.cc
+networklayer/common/InterfaceEntry.cc
+networklayer/common/InterfaceTable.cc
+networklayer/contract/IPAddress.cc
+networklayer/contract/IPAddressResolver.cc
+In file included from networklayer/contract/IPAddressResolver.cc:26:
+networklayer/ipv6/RoutingTable6.h:75:42: warning: assigning field to itself [-Wself-assign-field]
+    void setMetric(int metric)  {_metric = _metric;}
+                                         ^
+1 warning generated.
+networklayer/contract/IPControlInfo.cc
+networklayer/contract/IPv6Address.cc
+networklayer/contract/IPv6Address.cc:184:9: error: non-constant-expression cannot be narrowed from type 'uint32_t' (aka 'unsigned int') to 'int' in initializer list [-Wc++11-narrowing]
+        (d[0]>>16), (d[0]&0xffff), (d[1]>>16), (d[1]&0xffff),
+        ^~~~~~~~~~
+networklayer/contract/IPv6Address.cc:184:9: note: override this message by inserting an explicit cast
+        (d[0]>>16), (d[0]&0xffff), (d[1]>>16), (d[1]&0xffff),
+        ^~~~~~~~~~
+        static_cast<int>( )
+networklayer/contract/IPv6Address.cc:184:21: error: non-constant-expression cannot be narrowed from type 'unsigned int' to 'int' in initializer list [-Wc++11-narrowing]
+        (d[0]>>16), (d[0]&0xffff), (d[1]>>16), (d[1]&0xffff),
+                    ^~~~~~~~~~~~~
+networklayer/contract/IPv6Address.cc:184:21: note: override this message by inserting an explicit cast
+        (d[0]>>16), (d[0]&0xffff), (d[1]>>16), (d[1]&0xffff),
+                    ^~~~~~~~~~~~~
+                    static_cast<int>( )
+networklayer/contract/IPv6Address.cc:184:36: error: non-constant-expression cannot be narrowed from type 'uint32_t' (aka 'unsigned int') to 'int' in initializer list [-Wc++11-narrowing]
+        (d[0]>>16), (d[0]&0xffff), (d[1]>>16), (d[1]&0xffff),
+                                   ^~~~~~~~~~
+networklayer/contract/IPv6Address.cc:184:36: note: override this message by inserting an explicit cast
+        (d[0]>>16), (d[0]&0xffff), (d[1]>>16), (d[1]&0xffff),
+                                   ^~~~~~~~~~
+                                   static_cast<int>( )
+networklayer/contract/IPv6Address.cc:184:48: error: non-constant-expression cannot be narrowed from type 'unsigned int' to 'int' in initializer list [-Wc++11-narrowing]
+        (d[0]>>16), (d[0]&0xffff), (d[1]>>16), (d[1]&0xffff),
+                                               ^~~~~~~~~~~~~
+networklayer/contract/IPv6Address.cc:184:48: note: override this message by inserting an explicit cast
+        (d[0]>>16), (d[0]&0xffff), (d[1]>>16), (d[1]&0xffff),
+                                               ^~~~~~~~~~~~~
+                                               static_cast<int>( )
+networklayer/contract/IPv6Address.cc:185:9: error: non-constant-expression cannot be narrowed from type 'uint32_t' (aka 'unsigned int') to 'int' in initializer list [-Wc++11-narrowing]
+        (d[2]>>16), (d[2]&0xffff), (d[3]>>16), (d[3]&0xffff)
+        ^~~~~~~~~~
+networklayer/contract/IPv6Address.cc:185:9: note: override this message by inserting an explicit cast
+        (d[2]>>16), (d[2]&0xffff), (d[3]>>16), (d[3]&0xffff)
+        ^~~~~~~~~~
+        static_cast<int>( )
+networklayer/contract/IPv6Address.cc:185:21: error: non-constant-expression cannot be narrowed from type 'unsigned int' to 'int' in initializer list [-Wc++11-narrowing]
+        (d[2]>>16), (d[2]&0xffff), (d[3]>>16), (d[3]&0xffff)
+                    ^~~~~~~~~~~~~
+networklayer/contract/IPv6Address.cc:185:21: note: override this message by inserting an explicit cast
+        (d[2]>>16), (d[2]&0xffff), (d[3]>>16), (d[3]&0xffff)
+                    ^~~~~~~~~~~~~
+                    static_cast<int>( )
+networklayer/contract/IPv6Address.cc:185:36: error: non-constant-expression cannot be narrowed from type 'uint32_t' (aka 'unsigned int') to 'int' in initializer list [-Wc++11-narrowing]
+        (d[2]>>16), (d[2]&0xffff), (d[3]>>16), (d[3]&0xffff)
+                                   ^~~~~~~~~~
+networklayer/contract/IPv6Address.cc:185:36: note: override this message by inserting an explicit cast
+        (d[2]>>16), (d[2]&0xffff), (d[3]>>16), (d[3]&0xffff)
+                                   ^~~~~~~~~~
+                                   static_cast<int>( )
+networklayer/contract/IPv6Address.cc:185:48: error: non-constant-expression cannot be narrowed from type 'unsigned int' to 'int' in initializer list [-Wc++11-narrowing]
+        (d[2]>>16), (d[2]&0xffff), (d[3]>>16), (d[3]&0xffff)
+                                               ^~~~~~~~~~~~~
+networklayer/contract/IPv6Address.cc:185:48: note: override this message by inserting an explicit cast
+        (d[2]>>16), (d[2]&0xffff), (d[3]>>16), (d[3]&0xffff)
+                                               ^~~~~~~~~~~~~
+                                               static_cast<int>( )
+8 errors generated.
+make[1]: *** [../out/gcc-debug/src/networklayer/contract/IPv6Address.o] Error 1
+make: *** [all] Error 2
+
+16:42:03 Build Finished (took 1m:5s.263ms)
+

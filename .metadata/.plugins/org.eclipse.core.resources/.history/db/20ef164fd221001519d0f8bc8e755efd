@@ -1,0 +1,64 @@
+[General]
+cmdenv-express-mode = true
+network = WMNProject
+sim-time-limit = 60s
+
+##########################################################
+#			Simulation parameters                        #
+##########################################################
+**.**.coreDebug = false
+**.playgroundSizeX = 400m
+**.playgroundSizeY = 400m
+**.playgroundSizeZ = 400m
+**.numNodes = 10
+
+##########################################################
+#			WorldUtility parameters                      #
+##########################################################
+**.world.useTorus = false
+**.world.use2D = false
+
+##########################################################
+#       Parameters for the ConnectionManager             #
+##########################################################
+**.connectionManager.carrierFrequency = 2.412e9Hz  # [Hz]
+
+# max transmission power [mW]
+**.connectionManager.pMax = 110.11mW  # [mW]
+# signal attenuation threshold [dBm]
+**.connectionManager.sat = -100dBm  # [dBm]
+# path loss coefficient alpha
+**.connectionManager.alpha = 3.0
+**.connectionManager.sendDirect = false
+
+##########################################################
+#       Parameters for the Host                          #
+##########################################################
+
+############# Phy parameters #############################
+**.phy.usePropagationDelay = false
+**.phy.thermalNoise = -110dBm  # [dBm]
+**.phy.useThermalNoise = true
+**.phy.analogueModels = xmldoc("config.xml")
+**.phy.decider = xmldoc("config.xml")
+**.phy.maxTXPower = 110.11mW
+################ Application layer parameters ############
+**.node[*].applicationType = "TrafficGen"
+**.appl.trafficType = "periodic"
+**.appl.trafficParam = 1s #in seconds
+**.appl.broadcastPackets = true
+**.appl.nbPackets = 3
+**.appl.initializationTime = 10s
+################ NETW layer parameters ###################
+**.node[*].networkType = "WiseRoute"
+#**.node[*].netwl.debug = true
+**.node[*].netwl.stats = true
+**.node[*].netwl.headerLength = 160 bit
+################ Mobility parameters #####################
+**.node[*].mobilityType = "ConstSpeedMobility"
+**.node[*].mobility.debug = false
+**.node[*].mobility.speed = 1mps
+**.node[*].mobility.updateInterval = 0.1s
+**.node[*].mobility.initialX = 150m
+**.node[*].mobility.initialY = 200m
+**.node[*].mobility.initialZ = 250m

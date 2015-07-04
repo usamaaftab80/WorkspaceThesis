@@ -1,147 +1,217 @@
 version 2
-run General-0-20150630-17:08:00-50412
+run General-0-20150703-15:41:54-54838
 attr configname General
-attr datetime 20150630-17:08:00
+attr datetime 20150703-15:41:54
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvars2 $repetition=0
 attr measurement ""
 attr network WMNProject
-attr processid 50412
+attr processid 54838
 attr repetition 0
 attr replication #0
 attr resultdir results
 attr runnumber 0
 attr seedset 0
 
-scalar WMNProject.node[0].nic.phy 	nbFramesWithInterference 	1
-scalar WMNProject.node[0].nic.phy 	nbFramesWithoutInterference 	36
+scalar WMNProject.node[0].nic.phy 	nbFramesWithInterference 	37
+scalar WMNProject.node[0].nic.phy 	nbFramesWithoutInterference 	734
 scalar WMNProject.node[0].nic.phy 	nbFramesWithInterferencePartial 	0
 scalar WMNProject.node[0].nic.phy 	nbFramesWithoutInterferencePartial 	0
-scalar WMNProject.node[0].nic.phy 	nbFramesWithInterferenceDropped 	2
+scalar WMNProject.node[0].nic.phy 	nbFramesWithInterferenceDropped 	73
 scalar WMNProject.node[0].nic.phy 	nbFramesWithoutInterferenceDropped 	0
-scalar WMNProject.node[0].netwl 	nbDataPacketsReceived 	12
-scalar WMNProject.node[0].netwl 	nbDataPacketsSent 	3
-scalar WMNProject.node[0].netwl 	nbDataPacketsForwarded 	12
-scalar WMNProject.node[0].netwl 	meanNbHops 	2
-scalar WMNProject.node[0].appl 	"activity duration" 	2.721406974718
-attr unit  s
-scalar WMNProject.node[0].appl 	firstPacketGeneration 	10.07103605871
-attr unit  s
-scalar WMNProject.node[0].appl 	lastPacketReception 	12.792443033428
-attr unit  s
-scalar WMNProject.node[0].appl 	nbPacketsSent 	3
-scalar WMNProject.node[0].appl 	nbPacketsReceived 	12
-statistic WMNProject.node[0].appl 	latency
-field count 12
-field mean 0.000513
-field stddev 0.0001720729232305
-field sum 0.006156
-field sqrsum 3.483728e-06
-field min 0.000398
-field max 0.000818
-scalar WMNProject.node[1].nic.phy 	nbFramesWithInterference 	1
-scalar WMNProject.node[1].nic.phy 	nbFramesWithoutInterference 	37
+scalar WMNProject.node[0].netwl 	nbDataPacketsForwarded 	275
+scalar WMNProject.node[0].netwl 	nbDataPacketsReceived 	275
+scalar WMNProject.node[0].netwl 	nbDataPacketsSent 	26
+scalar WMNProject.node[0].netwl 	nbDuplicatedFloodsReceived 	496
+scalar WMNProject.node[0].netwl 	nbFloodsSent 	26
+scalar WMNProject.node[0].netwl 	nbPureUnicastSent 	0
+scalar WMNProject.node[0].netwl 	nbRouteFloodsSent 	0
+scalar WMNProject.node[0].netwl 	nbRouteFloodsReceived 	0
+scalar WMNProject.node[0].netwl 	nbUnicastFloodForwarded 	0
+scalar WMNProject.node[0].netwl 	nbPureUnicastForwarded 	0
+scalar WMNProject.node[0].netwl 	nbGetRouteFailures 	26
+scalar WMNProject.node[0].netwl 	nbRoutesRecorded 	0
+scalar WMNProject.node[0].netwl 	meanNbHops 	0
+scalar WMNProject.node[0].appl 	dropped 	0
+scalar WMNProject.node[1].nic.phy 	nbFramesWithInterference 	28
+scalar WMNProject.node[1].nic.phy 	nbFramesWithoutInterference 	733
 scalar WMNProject.node[1].nic.phy 	nbFramesWithInterferencePartial 	0
 scalar WMNProject.node[1].nic.phy 	nbFramesWithoutInterferencePartial 	0
-scalar WMNProject.node[1].nic.phy 	nbFramesWithInterferenceDropped 	1
+scalar WMNProject.node[1].nic.phy 	nbFramesWithInterferenceDropped 	83
 scalar WMNProject.node[1].nic.phy 	nbFramesWithoutInterferenceDropped 	0
-scalar WMNProject.node[1].netwl 	nbDataPacketsReceived 	12
-scalar WMNProject.node[1].netwl 	nbDataPacketsSent 	3
-scalar WMNProject.node[1].netwl 	nbDataPacketsForwarded 	12
-scalar WMNProject.node[1].netwl 	meanNbHops 	2
-scalar WMNProject.node[1].appl 	"activity duration" 	2.707818698179
-attr unit  s
-scalar WMNProject.node[1].appl 	firstPacketGeneration 	10.07103605871
-attr unit  s
-scalar WMNProject.node[1].appl 	lastPacketReception 	12.778854756889
-attr unit  s
-scalar WMNProject.node[1].appl 	nbPacketsSent 	3
-scalar WMNProject.node[1].appl 	nbPacketsReceived 	12
-statistic WMNProject.node[1].appl 	latency
-field count 12
-field mean 0.00049466666666667
-field stddev 0.00015950681566135
-field sum 0.005936
-field sqrsum 3.216208e-06
-field min 0.000398
-field max 0.000818
-scalar WMNProject.node[2].nic.phy 	nbFramesWithInterference 	4
-scalar WMNProject.node[2].nic.phy 	nbFramesWithoutInterference 	34
+scalar WMNProject.node[1].netwl 	nbDataPacketsForwarded 	270
+scalar WMNProject.node[1].netwl 	nbDataPacketsReceived 	270
+scalar WMNProject.node[1].netwl 	nbDataPacketsSent 	31
+scalar WMNProject.node[1].netwl 	nbDuplicatedFloodsReceived 	491
+scalar WMNProject.node[1].netwl 	nbFloodsSent 	31
+scalar WMNProject.node[1].netwl 	nbPureUnicastSent 	0
+scalar WMNProject.node[1].netwl 	nbRouteFloodsSent 	0
+scalar WMNProject.node[1].netwl 	nbRouteFloodsReceived 	0
+scalar WMNProject.node[1].netwl 	nbUnicastFloodForwarded 	0
+scalar WMNProject.node[1].netwl 	nbPureUnicastForwarded 	0
+scalar WMNProject.node[1].netwl 	nbGetRouteFailures 	31
+scalar WMNProject.node[1].netwl 	nbRoutesRecorded 	0
+scalar WMNProject.node[1].netwl 	meanNbHops 	0
+scalar WMNProject.node[1].appl 	dropped 	0
+scalar WMNProject.node[2].nic.phy 	nbFramesWithInterference 	49
+scalar WMNProject.node[2].nic.phy 	nbFramesWithoutInterference 	726
 scalar WMNProject.node[2].nic.phy 	nbFramesWithInterferencePartial 	0
 scalar WMNProject.node[2].nic.phy 	nbFramesWithoutInterferencePartial 	0
-scalar WMNProject.node[2].nic.phy 	nbFramesWithInterferenceDropped 	1
+scalar WMNProject.node[2].nic.phy 	nbFramesWithInterferenceDropped 	69
 scalar WMNProject.node[2].nic.phy 	nbFramesWithoutInterferenceDropped 	0
-scalar WMNProject.node[2].netwl 	nbDataPacketsReceived 	12
-scalar WMNProject.node[2].netwl 	nbDataPacketsSent 	3
-scalar WMNProject.node[2].netwl 	nbDataPacketsForwarded 	12
-scalar WMNProject.node[2].netwl 	meanNbHops 	2
-scalar WMNProject.node[2].appl 	"activity duration" 	2.354855823451
-attr unit  s
-scalar WMNProject.node[2].appl 	firstPacketGeneration 	10.437587209977
-attr unit  s
-scalar WMNProject.node[2].appl 	lastPacketReception 	12.792443033428
-attr unit  s
-scalar WMNProject.node[2].appl 	nbPacketsSent 	3
-scalar WMNProject.node[2].appl 	nbPacketsReceived 	12
-statistic WMNProject.node[2].appl 	latency
-field count 12
-field mean 0.00052133333333333
-field stddev 0.00016837908169222
-field sum 0.006256
-field sqrsum 3.573328e-06
-field min 0.000398
-field max 0.000818
-scalar WMNProject.node[3].nic.phy 	nbFramesWithInterference 	2
-scalar WMNProject.node[3].nic.phy 	nbFramesWithoutInterference 	36
+scalar WMNProject.node[2].netwl 	nbDataPacketsForwarded 	274
+scalar WMNProject.node[2].netwl 	nbDataPacketsReceived 	274
+scalar WMNProject.node[2].netwl 	nbDataPacketsSent 	27
+scalar WMNProject.node[2].netwl 	nbDuplicatedFloodsReceived 	501
+scalar WMNProject.node[2].netwl 	nbFloodsSent 	27
+scalar WMNProject.node[2].netwl 	nbPureUnicastSent 	0
+scalar WMNProject.node[2].netwl 	nbRouteFloodsSent 	0
+scalar WMNProject.node[2].netwl 	nbRouteFloodsReceived 	0
+scalar WMNProject.node[2].netwl 	nbUnicastFloodForwarded 	0
+scalar WMNProject.node[2].netwl 	nbPureUnicastForwarded 	0
+scalar WMNProject.node[2].netwl 	nbGetRouteFailures 	27
+scalar WMNProject.node[2].netwl 	nbRoutesRecorded 	0
+scalar WMNProject.node[2].netwl 	meanNbHops 	0
+scalar WMNProject.node[2].appl 	dropped 	0
+scalar WMNProject.node[3].nic.phy 	nbFramesWithInterference 	36
+scalar WMNProject.node[3].nic.phy 	nbFramesWithoutInterference 	734
 scalar WMNProject.node[3].nic.phy 	nbFramesWithInterferencePartial 	0
 scalar WMNProject.node[3].nic.phy 	nbFramesWithoutInterferencePartial 	0
-scalar WMNProject.node[3].nic.phy 	nbFramesWithInterferenceDropped 	1
+scalar WMNProject.node[3].nic.phy 	nbFramesWithInterferenceDropped 	74
 scalar WMNProject.node[3].nic.phy 	nbFramesWithoutInterferenceDropped 	0
-scalar WMNProject.node[3].netwl 	nbDataPacketsReceived 	12
-scalar WMNProject.node[3].netwl 	nbDataPacketsSent 	3
-scalar WMNProject.node[3].netwl 	nbDataPacketsForwarded 	12
-scalar WMNProject.node[3].netwl 	meanNbHops 	2
-scalar WMNProject.node[3].appl 	"activity duration" 	2.721406974718
-attr unit  s
-scalar WMNProject.node[3].appl 	firstPacketGeneration 	10.07103605871
-attr unit  s
-scalar WMNProject.node[3].appl 	lastPacketReception 	12.792443033428
-attr unit  s
-scalar WMNProject.node[3].appl 	nbPacketsSent 	3
-scalar WMNProject.node[3].appl 	nbPacketsReceived 	12
-statistic WMNProject.node[3].appl 	latency
-field count 12
-field mean 0.00049633333333333
-field stddev 0.00016191093698435
-field sum 0.005956
-field sqrsum 3.244528e-06
-field min 0.000398
-field max 0.000818
-scalar WMNProject.node[4].nic.phy 	nbFramesWithInterference 	1
-scalar WMNProject.node[4].nic.phy 	nbFramesWithoutInterference 	37
+scalar WMNProject.node[3].netwl 	nbDataPacketsForwarded 	272
+scalar WMNProject.node[3].netwl 	nbDataPacketsReceived 	272
+scalar WMNProject.node[3].netwl 	nbDataPacketsSent 	29
+scalar WMNProject.node[3].netwl 	nbDuplicatedFloodsReceived 	498
+scalar WMNProject.node[3].netwl 	nbFloodsSent 	29
+scalar WMNProject.node[3].netwl 	nbPureUnicastSent 	0
+scalar WMNProject.node[3].netwl 	nbRouteFloodsSent 	0
+scalar WMNProject.node[3].netwl 	nbRouteFloodsReceived 	0
+scalar WMNProject.node[3].netwl 	nbUnicastFloodForwarded 	0
+scalar WMNProject.node[3].netwl 	nbPureUnicastForwarded 	0
+scalar WMNProject.node[3].netwl 	nbGetRouteFailures 	29
+scalar WMNProject.node[3].netwl 	nbRoutesRecorded 	0
+scalar WMNProject.node[3].netwl 	meanNbHops 	0
+scalar WMNProject.node[3].appl 	dropped 	0
+scalar WMNProject.node[4].nic.phy 	nbFramesWithInterference 	40
+scalar WMNProject.node[4].nic.phy 	nbFramesWithoutInterference 	735
 scalar WMNProject.node[4].nic.phy 	nbFramesWithInterferencePartial 	0
 scalar WMNProject.node[4].nic.phy 	nbFramesWithoutInterferencePartial 	0
-scalar WMNProject.node[4].nic.phy 	nbFramesWithInterferenceDropped 	1
+scalar WMNProject.node[4].nic.phy 	nbFramesWithInterferenceDropped 	69
 scalar WMNProject.node[4].nic.phy 	nbFramesWithoutInterferenceDropped 	0
-scalar WMNProject.node[4].netwl 	nbDataPacketsReceived 	12
-scalar WMNProject.node[4].netwl 	nbDataPacketsSent 	3
-scalar WMNProject.node[4].netwl 	nbDataPacketsForwarded 	12
-scalar WMNProject.node[4].netwl 	meanNbHops 	2
-scalar WMNProject.node[4].appl 	"activity duration" 	2.721406974718
-attr unit  s
-scalar WMNProject.node[4].appl 	firstPacketGeneration 	10.07103605871
-attr unit  s
-scalar WMNProject.node[4].appl 	lastPacketReception 	12.792443033428
-attr unit  s
-scalar WMNProject.node[4].appl 	nbPacketsSent 	3
-scalar WMNProject.node[4].appl 	nbPacketsReceived 	12
-statistic WMNProject.node[4].appl 	latency
-field count 12
-field mean 0.000458
-field stddev 0.00012030264865217
-field sum 0.005496
-field sqrsum 2.676368e-06
-field min 0.000398
-field max 0.000718
+scalar WMNProject.node[4].netwl 	nbDataPacketsForwarded 	269
+scalar WMNProject.node[4].netwl 	nbDataPacketsReceived 	269
+scalar WMNProject.node[4].netwl 	nbDataPacketsSent 	32
+scalar WMNProject.node[4].netwl 	nbDuplicatedFloodsReceived 	506
+scalar WMNProject.node[4].netwl 	nbFloodsSent 	32
+scalar WMNProject.node[4].netwl 	nbPureUnicastSent 	0
+scalar WMNProject.node[4].netwl 	nbRouteFloodsSent 	0
+scalar WMNProject.node[4].netwl 	nbRouteFloodsReceived 	0
+scalar WMNProject.node[4].netwl 	nbUnicastFloodForwarded 	0
+scalar WMNProject.node[4].netwl 	nbPureUnicastForwarded 	0
+scalar WMNProject.node[4].netwl 	nbGetRouteFailures 	32
+scalar WMNProject.node[4].netwl 	nbRoutesRecorded 	0
+scalar WMNProject.node[4].netwl 	meanNbHops 	0
+scalar WMNProject.node[4].appl 	dropped 	0
+scalar WMNProject.node[5].nic.phy 	nbFramesWithInterference 	61
+scalar WMNProject.node[5].nic.phy 	nbFramesWithoutInterference 	734
+scalar WMNProject.node[5].nic.phy 	nbFramesWithInterferencePartial 	0
+scalar WMNProject.node[5].nic.phy 	nbFramesWithoutInterferencePartial 	0
+scalar WMNProject.node[5].nic.phy 	nbFramesWithInterferenceDropped 	49
+scalar WMNProject.node[5].nic.phy 	nbFramesWithoutInterferenceDropped 	0
+scalar WMNProject.node[5].netwl 	nbDataPacketsForwarded 	269
+scalar WMNProject.node[5].netwl 	nbDataPacketsReceived 	269
+scalar WMNProject.node[5].netwl 	nbDataPacketsSent 	32
+scalar WMNProject.node[5].netwl 	nbDuplicatedFloodsReceived 	526
+scalar WMNProject.node[5].netwl 	nbFloodsSent 	32
+scalar WMNProject.node[5].netwl 	nbPureUnicastSent 	0
+scalar WMNProject.node[5].netwl 	nbRouteFloodsSent 	0
+scalar WMNProject.node[5].netwl 	nbRouteFloodsReceived 	0
+scalar WMNProject.node[5].netwl 	nbUnicastFloodForwarded 	0
+scalar WMNProject.node[5].netwl 	nbPureUnicastForwarded 	0
+scalar WMNProject.node[5].netwl 	nbGetRouteFailures 	32
+scalar WMNProject.node[5].netwl 	nbRoutesRecorded 	0
+scalar WMNProject.node[5].netwl 	meanNbHops 	0
+scalar WMNProject.node[5].appl 	dropped 	0
+scalar WMNProject.node[6].nic.phy 	nbFramesWithInterference 	56
+scalar WMNProject.node[6].nic.phy 	nbFramesWithoutInterference 	733
+scalar WMNProject.node[6].nic.phy 	nbFramesWithInterferencePartial 	0
+scalar WMNProject.node[6].nic.phy 	nbFramesWithoutInterferencePartial 	0
+scalar WMNProject.node[6].nic.phy 	nbFramesWithInterferenceDropped 	55
+scalar WMNProject.node[6].nic.phy 	nbFramesWithoutInterferenceDropped 	0
+scalar WMNProject.node[6].netwl 	nbDataPacketsForwarded 	270
+scalar WMNProject.node[6].netwl 	nbDataPacketsReceived 	270
+scalar WMNProject.node[6].netwl 	nbDataPacketsSent 	31
+scalar WMNProject.node[6].netwl 	nbDuplicatedFloodsReceived 	519
+scalar WMNProject.node[6].netwl 	nbFloodsSent 	31
+scalar WMNProject.node[6].netwl 	nbPureUnicastSent 	0
+scalar WMNProject.node[6].netwl 	nbRouteFloodsSent 	0
+scalar WMNProject.node[6].netwl 	nbRouteFloodsReceived 	0
+scalar WMNProject.node[6].netwl 	nbUnicastFloodForwarded 	0
+scalar WMNProject.node[6].netwl 	nbPureUnicastForwarded 	0
+scalar WMNProject.node[6].netwl 	nbGetRouteFailures 	31
+scalar WMNProject.node[6].netwl 	nbRoutesRecorded 	0
+scalar WMNProject.node[6].netwl 	meanNbHops 	0
+scalar WMNProject.node[6].appl 	dropped 	0
+scalar WMNProject.node[7].nic.phy 	nbFramesWithInterference 	53
+scalar WMNProject.node[7].nic.phy 	nbFramesWithoutInterference 	731
+scalar WMNProject.node[7].nic.phy 	nbFramesWithInterferencePartial 	0
+scalar WMNProject.node[7].nic.phy 	nbFramesWithoutInterferencePartial 	0
+scalar WMNProject.node[7].nic.phy 	nbFramesWithInterferenceDropped 	60
+scalar WMNProject.node[7].nic.phy 	nbFramesWithoutInterferenceDropped 	0
+scalar WMNProject.node[7].netwl 	nbDataPacketsForwarded 	269
+scalar WMNProject.node[7].netwl 	nbDataPacketsReceived 	269
+scalar WMNProject.node[7].netwl 	nbDataPacketsSent 	32
+scalar WMNProject.node[7].netwl 	nbDuplicatedFloodsReceived 	515
+scalar WMNProject.node[7].netwl 	nbFloodsSent 	32
+scalar WMNProject.node[7].netwl 	nbPureUnicastSent 	0
+scalar WMNProject.node[7].netwl 	nbRouteFloodsSent 	0
+scalar WMNProject.node[7].netwl 	nbRouteFloodsReceived 	0
+scalar WMNProject.node[7].netwl 	nbUnicastFloodForwarded 	0
+scalar WMNProject.node[7].netwl 	nbPureUnicastForwarded 	0
+scalar WMNProject.node[7].netwl 	nbGetRouteFailures 	32
+scalar WMNProject.node[7].netwl 	nbRoutesRecorded 	0
+scalar WMNProject.node[7].netwl 	meanNbHops 	0
+scalar WMNProject.node[7].appl 	dropped 	0
+scalar WMNProject.node[8].nic.phy 	nbFramesWithInterference 	56
+scalar WMNProject.node[8].nic.phy 	nbFramesWithoutInterference 	722
+scalar WMNProject.node[8].nic.phy 	nbFramesWithInterferencePartial 	0
+scalar WMNProject.node[8].nic.phy 	nbFramesWithoutInterferencePartial 	0
+scalar WMNProject.node[8].nic.phy 	nbFramesWithInterferenceDropped 	66
+scalar WMNProject.node[8].nic.phy 	nbFramesWithoutInterferenceDropped 	0
+scalar WMNProject.node[8].netwl 	nbDataPacketsForwarded 	268
+scalar WMNProject.node[8].netwl 	nbDataPacketsReceived 	268
+scalar WMNProject.node[8].netwl 	nbDataPacketsSent 	33
+scalar WMNProject.node[8].netwl 	nbDuplicatedFloodsReceived 	510
+scalar WMNProject.node[8].netwl 	nbFloodsSent 	33
+scalar WMNProject.node[8].netwl 	nbPureUnicastSent 	0
+scalar WMNProject.node[8].netwl 	nbRouteFloodsSent 	0
+scalar WMNProject.node[8].netwl 	nbRouteFloodsReceived 	0
+scalar WMNProject.node[8].netwl 	nbUnicastFloodForwarded 	0
+scalar WMNProject.node[8].netwl 	nbPureUnicastForwarded 	0
+scalar WMNProject.node[8].netwl 	nbGetRouteFailures 	33
+scalar WMNProject.node[8].netwl 	nbRoutesRecorded 	0
+scalar WMNProject.node[8].netwl 	meanNbHops 	0
+scalar WMNProject.node[8].appl 	dropped 	0
+scalar WMNProject.node[9].nic.phy 	nbFramesWithInterference 	44
+scalar WMNProject.node[9].nic.phy 	nbFramesWithoutInterference 	735
+scalar WMNProject.node[9].nic.phy 	nbFramesWithInterferencePartial 	0
+scalar WMNProject.node[9].nic.phy 	nbFramesWithoutInterferencePartial 	0
+scalar WMNProject.node[9].nic.phy 	nbFramesWithInterferenceDropped 	63
+scalar WMNProject.node[9].nic.phy 	nbFramesWithoutInterferenceDropped 	0
+scalar WMNProject.node[9].netwl 	nbDataPacketsForwarded 	273
+scalar WMNProject.node[9].netwl 	nbDataPacketsReceived 	273
+scalar WMNProject.node[9].netwl 	nbDataPacketsSent 	30
+scalar WMNProject.node[9].netwl 	nbDuplicatedFloodsReceived 	506
+scalar WMNProject.node[9].netwl 	nbFloodsSent 	30
+scalar WMNProject.node[9].netwl 	nbPureUnicastSent 	0
+scalar WMNProject.node[9].netwl 	nbRouteFloodsSent 	0
+scalar WMNProject.node[9].netwl 	nbRouteFloodsReceived 	0
+scalar WMNProject.node[9].netwl 	nbUnicastFloodForwarded 	0
+scalar WMNProject.node[9].netwl 	nbPureUnicastForwarded 	0
+scalar WMNProject.node[9].netwl 	nbGetRouteFailures 	30
+scalar WMNProject.node[9].netwl 	nbRoutesRecorded 	0
+scalar WMNProject.node[9].netwl 	meanNbHops 	0
+scalar WMNProject.node[9].appl 	dropped 	0
